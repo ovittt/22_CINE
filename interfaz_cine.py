@@ -14,9 +14,9 @@ precio= StringVar()
 
 def crear_sala():
     pelicula= entry_sala.get()
-    hora= entry_butakas.get()
-    fecha = entry_boletos.get()
-    idioma= entry_precio.get()
+    hora= entry_hora.get()
+    fecha = entry_fecha.get()
+    idioma= entry_idioma.get()
     precio= entry_precio.get()
     cine_db = cine_database.MyDatabase()
     cine_db.insert_db(pelicula,hora,fecha,idioma,precio)
